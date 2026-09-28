@@ -1,0 +1,91 @@
+{
+  "best_config": "B_low_lr",
+  "test_accuracy": 0.963963963963964,
+  "test_precision": 0.9636363636363636,
+  "test_recall": 0.9636363636363636,
+  "test_f1": 0.9636363636363636,
+  "confusion_matrix": [
+    [
+      54,
+      2
+    ],
+    [
+      2,
+      53
+    ]
+  ],
+  "hyperparameter_comparison": [
+    {
+      "config": "B_low_lr",
+      "lr": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.3,
+      "optimizer_name": "adam",
+      "epochs": 20,
+      "final_train_acc": 0.9245647969052224,
+      "final_val_acc": 0.9459459459459459,
+      "best_val_acc": 0.972972972972973,
+      "final_val_loss": 0.1475819154634132
+    },
+    {
+      "config": "E_more_dropout",
+      "lr": 0.001,
+      "batch_size": 32,
+      "dropout": 0.6,
+      "optimizer_name": "adam",
+      "epochs": 20,
+      "final_train_acc": 0.8916827852998066,
+      "final_val_acc": 0.6936936936936937,
+      "best_val_acc": 0.972972972972973,
+      "final_val_loss": 1.1866045019648097
+    },
+    {
+      "config": "A_baseline",
+      "lr": 0.001,
+      "batch_size": 32,
+      "dropout": 0.3,
+      "optimizer_name": "adam",
+      "epochs": 20,
+      "final_train_acc": 0.9245647969052224,
+      "final_val_acc": 0.7477477477477478,
+      "best_val_acc": 0.954954954954955,
+      "final_val_loss": 0.6208037691073375
+    },
+    {
+      "config": "D_small_batch",
+      "lr": 0.001,
+      "batch_size": 8,
+      "dropout": 0.3,
+      "optimizer_name": "adam",
+      "epochs": 20,
+      "final_train_acc": 0.9303675048355899,
+      "final_val_acc": 0.9099099099099099,
+      "best_val_acc": 0.9459459459459459,
+      "final_val_loss": 0.19486328905767147
+    },
+    {
+      "config": "C_high_lr",
+      "lr": 0.005,
+      "batch_size": 32,
+      "dropout": 0.3,
+      "optimizer_name": "adam",
+      "epochs": 20,
+      "final_train_acc": 0.9090909090909091,
+      "final_val_acc": 0.8018018018018018,
+      "best_val_acc": 0.9279279279279279,
+      "final_val_loss": 0.546670434174237
+    },
+    {
+      "config": "F_sgd_momentum",
+      "lr": 0.01,
+      "batch_size": 32,
+      "dropout": 0.3,
+      "optimizer_name": "sgd",
+      "epochs": 20,
+      "final_train_acc": 0.8858800773694391,
+      "final_val_acc": 0.7927927927927928,
+      "best_val_acc": 0.918918918918919,
+      "final_val_loss": 0.5880361446389207
+    }
+  ]
+}
